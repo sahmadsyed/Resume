@@ -1,31 +1,30 @@
 \documentclass[letterpaper]{deedy-resume}
 
 \usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    citecolor=black,
+    filecolor=black,
+    urlcolor=black,
+}
 \setlength{\parindent}{0pt}
 \begin{document}
 
-% \namesection{Salman}{Syed}{ % Your name
-% % sa5syed@uwaterloo.ca \\
-% % 519-580-7115
-% }
 
+\sffamily
 
-\sffamily%
-
-% {\Huge\bfseries\begin{tabular}[c]{c}
-% % SALMAN SYED
-% \end{tabular}}\hfill%
-\hfill%
+\hfill
 {\Huge\bfseries\begin{tabular}[c]{c}
 \vspace*{-0.6cm}
 SALMAN SYED\\
 \fontsize{9}{0}
 \selectfont
 519-580-7115  \textbullet{} sa5syed@uwaterloo.ca
-\end{tabular}}\hfill%
+\end{tabular}}\hfill
 {\small\bfseries\begin{tabular}[c]{c}
 
-\end{tabular}}\hfill%
+\end{tabular}}\hfill
 
 \noindent\rule{7.5in}{0.4pt}
 
@@ -52,32 +51,32 @@ SALMAN SYED\\
 \subsection{Languages}
 
 Python \textbullet{} Java \textbullet{} JavaScript \textbullet{} HTML \\
-JSP \textbullet{} CSS \textbullet{} C/C++ \textbullet{} SQL \textbullet{} XPath \\ 
+JSP \textbullet{} CSS \textbullet{} C/C++ \textbullet{} SQL \textbullet{} XPath \textbullet{} MATLAB \\ 
 
 \sectionspace % Some whitespace after the section
 \subsection{Frameworks}
 
-Django \textbullet{} Bootstrap \textbullet{} jQuery \textbullet{} Node.js\\
-AngularJS \textbullet{} Express.js \textbullet{} Jersey \textbullet{} JUnit \\ 
+Django \textbullet{} Node.js \textbullet{} Express.js \textbullet{} jQuery  \\
+AngularJS \textbullet{} Bootstrap \textbullet{} Jersey \textbullet{} JUnit \\ 
 Scrapy \textbullet{} Pygame
 
 \sectionspace
 
 \subsection{Tools}
 
-Unix \textbullet{} Vim \textbullet{} Git \textbullet{} Android Studio\\
-Eclipse \textbullet{} Microsoft Visual Studio
+MongoDB \textbullet{} SQLite \textbullet{} Android Studio\\
+Git \textbullet{} Eclipse \textbullet{} Vim \textbullet{} Visual Studio
 \sectionspace
 
 \section{Coursework}
 \vspace{\topsep}
 \begin{tightitemize}
+\item Operating Systems
+\item Algorithms
 \item Data Structures and Data Management
+\item Foundations of Sequential Programs
 \item Software Engineering Principles
 \item Logic and Computation
-\item Introduction to Combinatorics
-\item Foundations of Sequential Programs
-\item Introduction to Data Abstraction and Implementation
 \end{tightitemize}
 \sectionspace
 
@@ -104,17 +103,28 @@ Eclipse \textbullet{} Microsoft Visual Studio
 
 \section{Experience}
 
+\runsubsection{Connected Lab Inc}
+\descript{| Software Engineer}
+
+\location{May 2016 - August 2016 | Toronto, ON}
+\vspace{\topsep}
+\begin{tightitemize}
+\item Lead developer of team of three for Android application which integrated with customized Bluetooth Low Energy beacons
+\item Designed application to periodically scan for and communicate with nearby beacons and store beacon data in SQLite database
+\item Implemented frontend and backend logic to enable users to efficiently search and filter for beacon data
+\end{tightitemize}
+
+\sectionspace
+
 \runsubsection{Oracle Corporation}
 \descript{| Software Developer}
 
 \location{September 2015 - December 2015 | Toronto, ON}
-\vspace{\topsep}
 \begin{tightitemize}
 \item Developed, tested, and maintained multiple Oracle Marketing Cloud web applications currently present in the marketplace
 \item Implemented applications to handle leads from Eloqua's REST API, render the webpage, and faciliate communication with third-party APIs
 \item Developed various unit tests using JUnit in order to maximize code coverage
-\item Worked in a fast-paced, agile environment with bi-weekly sprints and weekly demos to showcase sprint progress
-\item  Implementation in JSP/CSS/jQuery (frontend) and Java/Jersey (backend) using WebLogic servers
+\item Implementation in JSP/CSS/jQuery (frontend) and Java/Jersey (backend) using WebLogic servers
 \end{tightitemize}
 
 \sectionspace
@@ -124,7 +134,7 @@ Eclipse \textbullet{} Microsoft Visual Studio
 
 \location{January 2015 - April 2015 | Burlington, ON}
 \begin{tightitemize}
-\item Designed and expanded Python JSON-RPC API for the DreamCatcher Replay System based off of client specifications
+\item Designed and developed expansion of Python JSON-RPC API for the DreamCatcher Replay System based off of client specifications
 \item Wrote Python and Bash scripts in order to thoroughly test and debug API
 \item Actively participated in review of team members' code
 \end{tightitemize}
@@ -137,106 +147,43 @@ Eclipse \textbullet{} Microsoft Visual Studio
 \location{May 2014 - August 2014 | Concord, ON}
 \begin{tightitemize}
 \item Provided extensive technical support to users on site and remotely
-\item Assisted in the planning and coordination of distributing a variety of different software
-\item Wrote organized and thorough technical documentation
+\item Assisted in the planning and coordination of distributing a variety of software
 \end{tightitemize}
 
 \sectionspace
 
 \section{Related Projects}
 
+\runsubsection{TeachSphere}
+\location{}
+\begin{tightitemize}
+\item Won first place at the ASN Open Data Challenge Hackathon hosted by D2L and Canada's ODX
+\item Built social platform for Ontario teachers to share professional insights and best practices regarding the curriculum
+\item Technologies used: AngularJS, Node.js, Express.js, MongoDB
+\end{tightitemize}
+\sectionspace
+
 \runsubsection{NBA Engine}
 \location{}
 \begin{tightitemize}
 \item Developed Django application which allows users to find the latest information and stats about NBA players in a more convenient and simplified manner
-\item Integrated YouTube Data API to enable updates of newest player highlight videos
-\item Built REST API to allow access to player information and stats via token authentication
-\item  Technologies used: HTML/CSS, Bootstrap, jQuery, Django, SQLite
+\item Integrated YouTube Data API to enable updates of player highlight videos
+\item Built REST API to allow access to player data via token authentication
+\item Technologies used: jQuery, Django, Memcached, Scrapy, SQLite
 \end{tightitemize}
 \sectionspace
-
-% \runsubsection{PacBlock}
-% \location{}
-% \begin{tightitemize}
-% \item 2D game developed based off of original Pacman game using the Pygame library
-% \item Technologies used: Python
-% \end{tightitemize}
-% \sectionspace
 
 \runsubsection{LearnSearch}
 \location{}
 \begin{tightitemize}
-\item Built MEAN application which allows users to search and find open online courses and tutorials of prominent educational organizations from a single source
-\item Educational organizations currently included: Udacity, KhanAcademy, Udemy, Coursera
-\item Technologies used: HTML/CSS, Bootstrap, AngularJS, Node.js, Express.js, MongoDB
+\item Built MEAN application which enables users to search for open online courses and tutorials of leading educational organizations from a single source
+\item Organizations currently included: Udacity, KhanAcademy, Udemy, Coursera
+\item Technologies used: AngularJS, Node.js, Express.js, MongoDB
 \end{tightitemize}
 \sectionspace
 
-\runsubsection{Uber Hackathon Android Application}
-\location{}
-\begin{tightitemize}
-\item Developed Android application to faciliate easier navigation of the Uber system using different Uber API endpoints 
-\item Integrated Google Geocoding API in order to enable users to pinpoint location for requests
-\item Technologies used: Java, XML
-\end{tightitemize}
-\sectionspace
-\textbf{More projects available at https://github.com/sahmadsyed}
-%------------------------------------------------
-% Awards
-%------------------------------------------------
-
-% \section{Awards} 
-
-% \begin{tabular}{rll}
-% 2014	 & top 52/2500 & KPCB Engineering Fellow\\
-% 2014	 & 2\textsuperscript{nd} most points & Google Code Jam, Qualification Round\\
-% 2014	 & 1\textsuperscript{st}/50 & Microsoft Coding Competition, Cornell\\
-% 2013	 & National & Jump Trading Challenge Finalist\\
-% 2013 & 7\textsuperscript{th}/120 & CS 3410 Cache Race Bot Tournament \\
-% 2012 & 2\textsuperscript{nd}/150 & CS 3110 Biannual Intra-Class Bot Tournament \\
-% 2011 & National & Indian National Mathematics Olympiad (INMO) Finalist \\
-% 2010 & National & Comp. Soc. of India's National Programming Contest\\
-% \end{tabular}
-
-% \sectionspace % Some whitespace after the section
-
-% %------------------------------------------------
-% % Societies
-% %------------------------------------------------
-
-% \section{Societies} 
-
-% \begin{tabular}{rll}
-% 2014 & top 12\%ile & Tau Beta Pi Engineering Honor Society\\
-% 2014 & National & The Global Leadership and Education Forum (tGELF)\\
-% 2012 & National & Golden Key International Honor Society\\
-% 2012 & National & National Society of Collegiate Scholars\\
-% \end{tabular}
-
-% \sectionspace % Some whitespace after the section
-
-%----------------------------------------------------------------------------------------
+\textbf{More projects available at \href{https://github.com/sahmadsyed}{https://github.com/sahmadsyed}}
 
 \end{minipage} % The end of the right column
-
-%----------------------------------------------------------------------------------------
-%	SECOND PAGE (EXAMPLE)
-%----------------------------------------------------------------------------------------
-
-%\newpage % Start a new page
-
-%\begin{minipage}[t]{0.33\textwidth} % The left column takes up 33% of the text width of the page
-
-%\section{Example Section}
-
-%\end{minipage} % The end of the left column
-%\hfill
-%\begin{minipage}[t]{0.66\textwidth} % The right column takes up 66% of the text width of the page
-
-%\section{Example Section 2}
-
-%\end{minipage} % The end of the right column
-
-%----------------------------------------------------------------------------------------
 
 \end{document}
