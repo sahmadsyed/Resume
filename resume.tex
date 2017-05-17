@@ -20,7 +20,7 @@
 SALMAN SYED\\
 \fontsize{9}{0}
 \selectfont
-519-580-7115  \textbullet{} sa5syed@uwaterloo.ca
+519-580-7115  \textbullet{} sa5syed@edu.uwaterloo.ca
 \end{tabular}}\hfill
 {\small\bfseries\begin{tabular}[c]{c}
 
@@ -50,8 +50,9 @@ SALMAN SYED\\
 
 \subsection{Languages}
 
-Python \textbullet{} Java \textbullet{} JavaScript \textbullet{} HTML \\
-JSP \textbullet{} CSS \textbullet{} C/C++ \textbullet{} SQL \textbullet{} XPath \textbullet{} MATLAB \\ 
+Python \textbullet{} Java \textbullet{} JavaScript \textbullet{} SQL \\
+Ruby \textbullet{}  C/C++ \textbullet{} Go \textbullet{} HTML \textbullet{} JSP \\
+CSS \textbullet{} MATLAB \\
 
 \sectionspace % Some whitespace after the section
 \subsection{Frameworks}
@@ -63,20 +64,22 @@ Scrapy \textbullet{} Pygame
 \sectionspace
 
 \subsection{Tools}
-
-MongoDB \textbullet{} SQLite \textbullet{} Android Studio\\
-Git \textbullet{} Eclipse \textbullet{} Vim \textbullet{} Visual Studio
+Git \textbullet{} Android Studio \textbullet{} AWS \textbullet{} Docker\\
+Jupyter \textbullet{} Apache Spark \textbullet{} Vim \textbullet{} Eclipse\\
+Visual Studio \textbullet{} Periscope \textbullet{} PostgreSQL\\
+SQLite \textbullet{} MongoDB \textbullet{} Redis \textbullet{} Oracle DB
 \sectionspace
 
 \section{Coursework}
 \vspace{\topsep}
 \begin{tightitemize}
-\item Operating Systems
 \item Algorithms
-\item Data Structures and Data Management
+\item Data Structures \& Data Management
+\item Concurrent \& Parallel Programming
+\item Operating Systems
 \item Foundations of Sequential Programs
 \item Software Engineering Principles
-\item Logic and Computation
+\item Logic \& Computation
 \end{tightitemize}
 \sectionspace
 
@@ -103,11 +106,25 @@ Git \textbullet{} Eclipse \textbullet{} Vim \textbullet{} Visual Studio
 
 \section{Experience}
 
+\runsubsection{Gametime United}
+\descript{| Data Engineer}
+
+\location{January 2017 - April 2017 | San Francisco, CA}
+\vspace{\topsep}
+\begin{tightitemize}
+\item Developed algorithm in PySpark which reads ticket dataset from S3 and generates relative seat rankings used to optimize the pricing of future tickets
+\item Responsible for entire stack of Spark job: provisioned and automated creation process of EMR cluster, cleaned and processed ticket data, tested and visualized on Jupyter, served final seat ranking to S3
+\item Wrote multiple Ruby ETL jobs to automate process of transforming data from third-party APIs and storing in an S3 bucket and Redshift table
+\item Migrated ETL process to Docker by developing interface to run legacy ETL jobs as tasks on ECS clusters
+\item Designed new push notification service written in Python using Pinpoint to create targeted campaigns leveraging user data from S3 and Redshift
+\end{tightitemize}
+
+\sectionspace
+
 \runsubsection{Connected Lab Inc}
 \descript{| Software Engineer}
 
 \location{May 2016 - August 2016 | Toronto, ON}
-\vspace{\topsep}
 \begin{tightitemize}
 \item Led a team of 3 developers in integrating the main Android application with customized Bluetooth Low Energy beacons
 \item Designed application to periodically scan for and communicate with nearby beacons and store beacon data in SQLite database
@@ -124,12 +141,12 @@ Git \textbullet{} Eclipse \textbullet{} Vim \textbullet{} Visual Studio
 \item Developed, tested, and maintained multiple Oracle Marketing Cloud web applications currently present in the marketplace
 \item Implemented applications to handle leads from Eloqua's REST API, render the webpage, and faciliate communication with third-party APIs
 \item Developed various unit tests using JUnit in order to maximize code coverage
-\item Implementation in JSP/CSS/jQuery (frontend) and Java/Jersey (backend) using WebLogic servers
+\item Implementation in JSP/CSS/jQuery (frontend) and Java/Jersey (backend) with an Oracle Database using WebLogic servers
 \end{tightitemize}
 
 \sectionspace
 
-\runsubsection{Evertz Microsystems Ltd.}
+\runsubsection{Evertz Microsystems Ltd}
 \descript{| Software Design Engineer}
 
 \location{January 2015 - April 2015 | Burlington, ON}
@@ -140,45 +157,22 @@ Git \textbullet{} Eclipse \textbullet{} Vim \textbullet{} Visual Studio
 
 \sectionspace
 
-\runsubsection{FGF Brands}
-\descript{| IT Support}
-
-\location{May 2014 - August 2014 | Concord, ON}
-\begin{tightitemize}
-\item Provided extensive technical support to users on site and remotely
-\item Assisted in the planning and coordination of distributing a variety of software
-\end{tightitemize}
-
-\sectionspace
-
 \section{Related Projects}
 
-\runsubsection{TeachSphere}
-\location{}
-\begin{tightitemize}
-\item Won first place at the ASN Open Data Challenge Hackathon hosted by D2L and Canada's ODX
-\item Built social platform for Ontario teachers to share professional insights and best practices regarding the curriculum
-\item Technologies used: AngularJS, Node.js, Express.js, MongoDB
-\end{tightitemize}
-\sectionspace
+\textbf{TeachSphere}
+Built social platform using Node.js for Ontario teachers to share professional insights and best practices regarding the curriculum (won first place at the ASN Open Data Challenge Hackathon hosted by D2L)
+\vspace*{0.2cm}
 
-\runsubsection{NBA Engine}
-\location{}
-\begin{tightitemize}
-\item Developed Django application which allows users to find the latest information and stats about NBA players in a more convenient and simplified manner
-\item Integrated YouTube Data API to enable updates of player highlight videos
-\item Built REST API to allow access to player data via token authentication
-\item Technologies used: jQuery, Django, Memcached, Scrapy, SQLite
-\end{tightitemize}
-\sectionspace
+\textbf{Property Listings Classifier}
+Built and trained ternary classifier using scikit-learn and pandas to predict interest level of new property listings
+\vspace*{0.2cm}
 
-\runsubsection{LearnSearch}
-\location{}
-\begin{tightitemize}
-\item Built web application which enables users to search for open online courses and tutorials of leading educational organizations from a single source
-\item Organizations currently included: Udacity, KhanAcademy, Udemy, Coursera
-\item Technologies used: AngularJS, Node.js, Express.js, MongoDB
-\end{tightitemize}
+\textbf{NBA Engine}
+Developed Django application which allows users to find the latest stats and highlights of NBA players
+\vspace*{0.2cm}
+
+\textbf{LearnSearch}
+Implemented Node.js application which enables users to search for open online courses and tutorials of leading educational organizations from a single source
 \sectionspace
 
 \textbf{More projects available at \href{https://github.com/sahmadsyed}{https://github.com/sahmadsyed}}
